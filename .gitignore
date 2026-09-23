@@ -1,0 +1,22 @@
+# Obsidian vault internals
+.obsidian/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Media (never commit video/audio)
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.ogg
+
+# Large files
+*.zip
+*.tar.gz
