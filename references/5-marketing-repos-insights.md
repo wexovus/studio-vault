@@ -25,7 +25,7 @@ Full copy: vault `references/higgsfield-ugc-guide.md`
 - **Default social settings:** 9:16, 720p, 8s clips.
 - **Prompt-bar discipline** (browser automation): JS-clear Lexical editor, screenshot-verify empty, type slowly, re-clear after Generate.
 
-**Our path is better than the gist's:** it drives the consumer web UI via Playwright; we have the official Higgsfield API + MCP server (`mcp.higgsfield.ai/mcp`). Same prompt craft, cleaner transport.
+**Our generation path is OpenRouter** (Nicolas, locked 2026-09-24): Veo via OpenRouter for clips, Gemini image / Qwen stills for keyframes — per the channel bibles. The Higgsfield API + MCP (`mcp.higgsfield.ai/mcp`) is a future option for Seedance-specific work, NOT the current path. The gist's Playwright-browser approach is the weakest of the three. Same prompt craft applies to all.
 
 ## 2. coreyhaines31/marketingskills — 51.4K stars
 `github.com/coreyhaines31/marketingskills`
