@@ -13,16 +13,17 @@ Deep-dive corpus: 10 videos. 4 Japanese-walking-specific (Dan Go 1.31M, KeikoFle
 
 ---
 
-## TITLE OPTIONS (short, catchy — pick one)
+## TITLE — LOCKED (Nicolas, 2026-09-24)
 
-| Candidate | Words | Mechanisms |
-|---|---|---|
-| **"2x Better Than 10,000 Steps"** | 5 | specificity + cognitive dissonance + anchoring (proven shape — Dan Go's 1.31M) |
-| **"The 3-Minute Walking Trick"** | 4 | curiosity gap + specificity + low-effort promise |
-| **"Why Japanese Seniors Outwalk Us"** | 4 | cultural hook (style guide pattern 5) + social identity + curiosity |
-| **"Walk Half. Gain Double."** | 4 | contradiction + specificity |
+# "Why Japanese Seniors Outlive Us"
 
-Recommendation: **"2x Better Than 10,000 Steps"** — the claim is already validated in-market; our edge is the senior-specific honest treatment, not a new claim. Thumbnail: "2x BETTER" over a real 60+ walker, warm morning light.
+5 words. Cultural hook + curiosity + loss aversion (the longevity gap, not just walking).
+Defensible: Japan life expectancy ~84 vs US ~77 (WHO/OECD — script research must pin
+exact figures with citation). VO2max gains from interval training are among the
+strongest longevity predictors — the "outlive" promise is delivered THROUGH the method.
+
+Rejected alternatives: "2x Better Than 10,000 Steps" (validated shape, weaker stakes),
+"The 3-Minute Walking Trick", "Walk Half. Gain Double."
 
 ---
 
@@ -31,11 +32,12 @@ Recommendation: **"2x Better Than 10,000 Steps"** — the claim is already valid
 Synthesized from: explainer synthesis (task 1) + golden template (task 3) + follow-along borrows (task 2).
 
 ```
-[0:00-0:15] HOOK — contradiction + cultural authority
-  "Ten thousand steps is a lie — and a Japanese university proved it
-   twenty years ago. Seniors there outwalk us doing HALF the steps.
-   Here's the method — and how to start this week at any fitness level."
-  (3-beat: contradiction → authority → promise. ≤15s to content. NO greeting.)
+[0:00-0:15] HOOK — longevity gap + cultural authority
+  "An 80-year-old in Japan will outlive an American by six years.
+   It's not just diet — it's HOW they walk. A university there proved
+   a walking method that beats 10,000 steps. Here's how to start this week."
+  (3-beat: stakes → authority → promise. ≤15s to content. NO greeting.
+   Life-expectancy figures from WHO/OECD — exact numbers cited on screen.)
 
 [0:15-0:45] THE PROBLEM — the plateau, in senior stakes
   Walking works, then it stops working. Same route, same effort, no change.
