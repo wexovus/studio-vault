@@ -1,7 +1,7 @@
 ---
 title: "Second Wind defect chain — eight root causes from the b5c51bf9 postmortem and reruns 14-18"
 created: 2026-09-25
-updated: 2026-09-25 (second batch: c700125..5c90d5f)
+updated: 2026-09-25 (batches 1-3: 62bd144..f430c5c, 20 defects)
 type: lesson
 tags: [senior-health, postmortem, gates, tts, gemini, ledger, transport]
 confidence: high
@@ -80,6 +80,38 @@ systolic/resting, cohort ages) in only one claim. See `contradict_claims` in `st
 14. **`studio reject` records the note but spawns no rewrite worker** — the project sits in
     script/running until `studio resume <id>`. Also: the reject CLI call itself can outlive a short
     foreground timeout after the note is already persisted; check the DB, don't re-reject.
+
+## Third batch (the render + QC phase, commits 69017ff..f430c5c)
+
+15. **A single-key pool must sleep through its cooldown, not die.** ElevenLabs 429
+    (36s) killed an approved render at TTS: pool_exhausted marked any wait over 12s
+    non-retryable — right for multi-key pools with a failover target, wrong for the
+    single ElevenLabs key. Fix: one-credential pools stay retryable; retry ceiling
+    raised to 120s.
+16. **Wikimedia's public-domain shelf is a military/government firehose.** All 12
+    archival slots shipped Navy briefing videos, a 52-min Obama address (1.19GB for
+    a 2.8s slot), a NASA press conference. Three-part fix: off-domain title poison
+    list (-2.0), zero-keyword-overlap rejection (a title sharing NO query word is a
+    score accident, not a candidate), and a LIVE vision review of every candidate.
+17. **The vision reviewer was dead for every prior run.** VISION_PROVIDER was
+    gemini,nvidia and nvidia registers NO vision role — one gemini 429 and the chain
+    fell through to "passing unreviewed, score 0.00". Chain: openrouter,gemini (paid
+    first). The project's config SNAPSHOT pins providers at produce time — fixing
+    .env does not fix a live project; patch the snapshot in the DB.
+18. **Free-tier gemini + per-candidate vision review = a crawl.** Each archive
+    candidate cost a vision call, each 429 benched the key 30-60s. When the archive
+    has no real footage (Wikimedia has almost no senior-walking content), the
+    correct move is to flip coverage to generated stills and stop asking.
+19. **Every master shipped SILENT.** compose has full music+ducking support that
+    was never once used because no channel set music_path. senior-health now has an
+    in-house synthesized warm pad (assets/music/second_wind_bed.wav, A-major stack,
+    -22dB under VO ducking) — zero licensing exposure. The project config snapshot
+    needed the same music_path patch, and the shorts needed re-cutting (the clip
+    source caches the master at clip_sources/; re-render after any re-compose).
+20. **Dailies review now works end-to-end**: keyframes rejected for real reasons
+    ("young woman strolls — FAIL forbidden" when the bible wants seniors) and
+    approved at score 1.00 for on-brand shots. A master is only as trustworthy as
+    its reviewer.
 
 ## Also fixed en route
 - Grounded-research refusals ("reluctant searcher", 0 citations) are a known flash-model failure — the run
