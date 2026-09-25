@@ -1,7 +1,7 @@
 ---
 title: "Second Wind defect chain — eight root causes from the b5c51bf9 postmortem and reruns 14-18"
 created: 2026-09-25
-updated: 2026-09-25 (batches 1-3: 62bd144..f430c5c, 20 defects)
+updated: 2026-09-25 (batches 1-4: 62bd144..9042fa8, 26 defects, $10.60 final cost)
 type: lesson
 tags: [senior-health, postmortem, gates, tts, gemini, ledger, transport]
 confidence: high
@@ -112,6 +112,31 @@ systolic/resting, cohort ages) in only one claim. See `contradict_claims` in `st
     ("young woman strolls — FAIL forbidden" when the bible wants seniors) and
     approved at score 1.00 for on-brand shots. A master is only as trustworthy as
     its reviewer.
+
+## Fourth batch — the finished-master audit loop (commits 8489227..9042fa8)
+
+21. **Clearing video_key does NOT re-shoot a still — clear first_frame_key too.**
+    do_keyframe() short-circuits when first_frame_key exists (visuals.py:881); the
+    re-render happily re-Ken-Burnsed the OLD off-brand keyframe (attempts=0, no
+    generation, no dailies review) and the "new" master carried the same young-adult
+    images at t=29/94/120. A re-shoot must null video_key AND first_frame_key.
+22. **Audit the finished master with pixels, not logs.** The 15-frame extraction +
+    vision audit caught what every pipeline log said was fine — 7/15 off-brand in
+    the first pass (5 young main subjects, a senior JOGGING, a jogger THUMBNAIL).
+    After the fixes: 4/15 borderline, 0 hard violations, thumbnail clean.
+23. **The thumbnail was a jogger** — generated before never_show named jogging.
+    Regenerated from an approved frame (t=146, older Japanese man, close profile).
+24. **Prompt-level bias: "person walking" reads young to image models.** Segments 8
+    and 37 burned 6+ re-rolls each because qwen draws 30-year-olds by default; the
+    bible's never_show rejects them; the loop only ends via fallback/hold-previous.
+    Shot descriptions must name the age explicitly ("a man in his seventies").
+25. **Wikimedia archive plates for "japanese seniors" are STILL military/government**
+    even after the poison list — seg 8 pulled wm190801899 ("Two military personnel",
+    FAIL 0.00) and seg 37 pulled costume/archive footage. The reviewer caught both;
+    both segments held on previous shots. Coverage fallback is load-bearing.
+26. **Budget: the brand-QC loop costs real money.** $10.60 final vs $9.00 bible —
+    the overshoot is ~10 re-rolls + 2 Veo fallbacks + 3 archive vision reviews. The
+    next produce should reserve ~20% of budget for QC re-rolls, or cap them.
 
 ## Also fixed en route
 - Grounded-research refusals ("reluctant searcher", 0 citations) are a known flash-model failure — the run
