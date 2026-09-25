@@ -1,7 +1,7 @@
 ---
 title: "Second Wind defect chain — eight root causes from the b5c51bf9 postmortem and reruns 14-18"
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-25 (second batch: c700125..5c90d5f)
 type: lesson
 tags: [senior-health, postmortem, gates, tts, gemini, ledger, transport]
 confidence: high
@@ -54,6 +54,32 @@ systolic/resting, cohort ages) in only one claim. See `contradict_claims` in `st
   a fix and the gate reported identical flags before and after "revising".
 - 16384 + 300s `HTTP_TIMEOUT_SECONDS` is the working envelope for long-form writer calls. If a revision
   reports the SAME flag count twice, suspect transport, not the writer.
+
+## Second batch (reruns 19-23, commits c700125..5c90d5f)
+
+9. **A spelled decimal is ONE figure.** 'seventy-eight point four' scanned as the integers 78 and 4
+   because 'point' is not a number word — the dialogue gate demanded a claim carrying 78 where the facts
+   carry 78.4, so the writer's correct line was unpassable and it "fixed" it to a wrong digit three runs
+   running. Fix: a shared `_figure_matches` iterator merges 'point'/'decimal' spans for both
+   `numbers_in` and `claim_figures`. Known limitation: a decimal whose next match spans an 'and'
+   compound will not merge (rare in narration).
+10. **Never mutate a list you are iterating.** The first cut of that iterator set `matches[i+1] = None`
+    and then read `.end()` on it — a claim with two chained spelled decimals crashed `verify_claims` with
+    AttributeError, the gemini research pass died, the run fell through to nvidia (which returns prose,
+    not JSON) and the whole run failed as "research unusable, 0 claims". A crash inside the number
+    parser presents as a research-provider failure. Fix: consumed-index set.
+11. **The fill gate fought the dedupe gate.** Forcing 75% fill made the writer pad with repeated lines,
+    which the repeat gate then blocked — two gates in a standoff across four runs. Calibrated to the
+    evidence: the writer's line is ~7 words, fill plateaus at 62-66% at every plan size. Threshold now
+    0.62 (keeps the b5c51bf9 55%-unpadded disaster out; 62% + breath pads lands in the 3-5s cut window).
+12. **Notes must never contain quotable lines.** The catchphrase 'the recovery minutes are part of the
+    training' was in --notes for eight runs; the writer copied it into beats and the dedupe gate killed
+    it every time. Notes steer the ARC; quote nothing you don't want to hear four times.
+13. **Segment indices in notes are a hazard.** 'The hook equals segment 1's dialogue' produced a hook in
+    BOTH segments[0] and segments[1] (segments are zero-indexed). Say 'the FIRST segment (segments[0])'.
+14. **`studio reject` records the note but spawns no rewrite worker** — the project sits in
+    script/running until `studio resume <id>`. Also: the reject CLI call itself can outlive a short
+    foreground timeout after the note is already persisted; check the DB, don't re-reject.
 
 ## Also fixed en route
 - Grounded-research refusals ("reluctant searcher", 0 citations) are a known flash-model failure — the run
