@@ -11,3 +11,4 @@
 
 ## Sources
 - None yet.
+- [[second-wind-defect-chain-2026-09-25]] — eight root causes from the b5c51bf9 postmortem and reruns 14-18
