@@ -14,4 +14,5 @@
 
 ## Sources
 - [[second-wind-defect-chain-2026-09-25]] — eight root causes from the b5c51bf9 postmortem and reruns 14-18
+- [[things-explained-rome-3min]] — IG reel, 2:58 Roman history, ~201 wpm dense chronological explainer; the promise-hook and label grammar
 - [[quietest-room-animated-explainer]] — IG reel, 8m15s, 139 shots, full transcript + shot list

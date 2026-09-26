@@ -22,4 +22,7 @@
 - First video on the drawn path: **how Nikola Tesla started** ([[stick-figure-first-video-2026-09-26]]) — 89 scenes, 281s, 1080p, $0.18 total spend against an $11 bible budget. Script written by subagents on nvidia against the grounded Graz-1875/Gramme-dynamo ledger (9/9 claims usable); voice by ElevenLabs.
 - Filed the run's defects: mixed mp3/WAV audio folder silently costing 15% of the voice in a concat, mp3 encoder delay desyncing captions, `mid`-as-ink black-void surfaces, the `place` overlay colliding with captions, and figure placement against set furniture.
 - Provider finding: a chain hop must be able to do the ROLE it is asked (nvidia resolves to a vision model for research/writing), and single-credential pools still spend their retry budget on instant failures instead of sleeping through the cooldown.
+- Ingested reference [[things-explained-rome-3min]] ("Roman history explained, under 3 minutes") — the dense chronological explainer: ~201 wpm, the promise itself as the hook, constant on-screen date/name labels, and a turn that reframes the ending. Extended [[animated-narrative-explainer]] with this third register and its five rules.
+- **Face finding**: no account in this niche draws recognisable faces — identity is costume plus name labels. A portrait head built from the subject's photographs is therefore an upgrade on the format, not an imitation of it.
+- Reference artefacts under `/mnt/bulk/studio-media/artifacts/ref_ddn4/`.
 

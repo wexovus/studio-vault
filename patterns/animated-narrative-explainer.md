@@ -1,7 +1,7 @@
 ---
 title: Animated narrative explainer — the winning format in senior health
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 type: pattern
 tags: [pattern, visual, retention, hook, pacing, animation, long-form]
 sources: [quietest-room-animated-explainer]
@@ -81,7 +81,53 @@ was reaching for and did not reach.
    Louisiana reel: "offer to buy just one city… ended up buying the entire
    territory for almost the same price… let's start from the beginning."
 
+
+## Third register: the dense chronological explainer (added 2026-09-26)
+
+Reference: [[things-explained-rome-3min]] — "Rome history explained, under three
+minutes". Sent by Nicolas as the model for how to tell a story worth watching,
+after our first stick-figure cut came back as a fact list with no reason to keep
+watching.
+
+It is a different shape from A and B above, and it is the one that fits a
+history channel:
+
+| | calm essay (B) | dense explainer (C) |
+|---|---|---|
+| rate | ~145 wpm, unhurried | **~201 wpm, continuous** |
+| length | 16 min | under 3 min |
+| structure | question → negation → numbered list → aphorism | strict chronology → turn → close |
+| hook | rhetorical question stack | **the promise itself**: "X explained, under three minutes" |
+| viewer's anchor | the recurring character | **on-screen labels** — dates, names, places, constantly |
+| ending | aphoristic close | a **turn** that reframes what came before |
+
+### The five rules worth copying
+
+1. **State the promise in the first sentence.** Subject + format + constraint.
+   Promise nothing you do not deliver.
+2. **Chronology is the spine.** One clause per event, then move. Never stop to
+   explain a scene — compression by omission, not by summary.
+3. **Label everything on screen.** Dates, names, places. In this format the
+   burned-in labels are the comprehension device; the drawing is the delivery.
+   Our renderer already supports beat labels — they need to be far more frequent
+   and factual than "one per story beat".
+4. **End on a turn, not a summary.** "But here's an important point…" reframes
+   the whole film. A fact list stops; a story lands.
+5. **Burned-in header for branding**, present the entire runtime.
+
+### The face finding
+
+**Nobody in this niche draws a recognisable face.** The audit of all 23 frames
+found abstract white discs with dot eyes on every named figure; identity comes
+from costume plus the name label.
+
+So a portrait head (a cartoon version of the actual person, built from their
+photographs) is an **upgrade on the format**, not a copy of it. We would be the
+only ones doing it. It also solves the thing labels cannot: a viewer who joins
+mid-video still knows who they are looking at.
+
 ## Why this matters for the pipeline
+
 
 Animation is deterministic. That is the whole argument: a vector scene with a
 defined character cannot grow a robot, cannot clip a body through a wall, and
