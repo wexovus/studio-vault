@@ -16,3 +16,10 @@
 - Reference library built: 2 Instagram reels + 5 YouTube videos ingested (transcript, shot boundaries, one frame per shot, contact sheets, vision reads). Artefacts under `/mnt/bulk/studio-media/artifacts/ref_*`.
 - Filed [[animated-narrative-explainer]] (pattern: the 2.58M-view winner on our own topic is 100% stick-figure animation; two winning registers; 8 load-bearing devices) and [[oversimplified-vector-style]] (art spec for the Louisiana Purchase reel Nicolas flagged).
 - Key structural finding: animation, not stock or AI stills, is the constant across the niche's winners — and it removes the three defects that survived every generation-time guardrail (robot, clipping, age-swap).
+
+## 2026-09-26
+- Locked "stick figure" as the house default style (`studio/styles.py`, `style:` in all five bibles). New `StickFigure` Remotion composition + `studio/stickfigure.py` compiler draw the picture from geometry, with the `generated` path kept as an alternative.
+- First video on the drawn path: **how Nikola Tesla started** ([[stick-figure-first-video-2026-09-26]]) — 89 scenes, 281s, 1080p, $0.18 total spend against an $11 bible budget. Script written by subagents on nvidia against the grounded Graz-1875/Gramme-dynamo ledger (9/9 claims usable); voice by ElevenLabs.
+- Filed the run's defects: mixed mp3/WAV audio folder silently costing 15% of the voice in a concat, mp3 encoder delay desyncing captions, `mid`-as-ink black-void surfaces, the `place` overlay colliding with captions, and figure placement against set furniture.
+- Provider finding: a chain hop must be able to do the ROLE it is asked (nvidia resolves to a vision model for research/writing), and single-credential pools still spend their retry budget on instant failures instead of sleeping through the cooldown.
+
