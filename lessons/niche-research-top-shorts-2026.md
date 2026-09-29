@@ -1,13 +1,51 @@
 ---
 title: YouTube Shorts Niche Research — Top Niches 2026
 created: 2026-09-01
-updated: 2026-09-01
+updated: 2026-09-28
 type: lesson
 tags: [youtube, short-form, niche, RPM, retention]
 confidence: medium
 ---
 
 # YouTube Shorts Niche Research — Top Niches 2026
+
+## Weekly Pulse — 2026-09-28
+
+### RPM Updates
+**March 2026 — engagement-weighted RPM live.** Completion rate is now the dominant revenue signal, replacing flat view-count pooling:
+- Finance/Investing: $0.08–0.15 → **$0.15–0.35** (+80–130%)
+- Tech Reviews: $0.06–0.12 → **$0.12–0.28** (+100–130%)
+- Business/Entrepreneurship: $0.05–0.10 → **$0.10–0.25** (+100–150%)
+- Education/How-to: $0.04–0.08 → **$0.08–0.20** (+100–150%)
+- Memes/Reposts: dropped up to **-30%** (now $0.01–0.02)
+- Average Shorts completion rate benchmark: **73%** | 50–60s Shorts average **76%** completion
+
+**May 2026 — revenue split raised to 55%** (matching long-form). Shorts RPM shifted to **$0.27–0.84** range. Previous was $0.18–0.60.
+
+**September 2026 — monetization threshold cut.** 500 subs + 3M Shorts views in 90 days (was 1,000 + 10M). Thresholds **double Feb 1, 2027** (20M Shorts views / 8,000 watch hours for new applicants — current acceptances grandfathered).
+
+**Shorts Plus (up to 3 min) is live.** 3-minute Shorts earn **2–3x the RPM** of 15-second clips when retention holds.
+
+### Trending Angles
+- **Captions are algorithmic priority**: burned-in captions deliver **20–30% more distribution** (sound-off viewers + accessibility push)
+- **Daily upload consistency bonus**: 15–25% RPM boost for 30+ consecutive days of posting — YouTube is actively rewarding daily cadence
+- **Niches winning under new RPM model**: Finance How-to, Tech Reviews, Business/Entrepreneurship, Education — all high-retention, idea-first formats
+- **5 trending Shorts niches per creators**: Football tactics, Roblox gaming, Podcast/talk show clips, Ranking content, Movie story recaps
+- **TubeBuddy 2026 trend call**: entertainment + food dominate Shorts discovery; trend-jacking outperforms evergreen; visual-first clips beat talking heads; Shorts aligned with top YouTube searches grow fastest
+
+### Podcast Gold
+- **Short Docos gaining** — Redditors noting TikTok/IG are dominating mobile but YouTube through TV is growing; people don't want polished — they want documentary-style short-form
+- **Clips that generated 10M+ views in 30 days** (podcast channel case study): hooks in **first 1–2 seconds** decide everything; controversial/opinion-based moments far outperform informational clips; **25–45 seconds** is the sweet spot
+- **AI clipping tools** (OpusClip, Riverside Magic Clips, Vidulk, Choppity) are standard — auto-framing, smart captions, viral scoring all working; **80%+ of Shorts watched on mute** — captions are mandatory, not optional
+- **Podcasts growing video-first**: 64% of new podcast consumers prefer video-first content; Shorts are the discovery layer; 30–60s for TikTok/Reels, **45–90s for YouTube Shorts**
+- **Julian, Kwadwo Sheldon, negotiation, leadership, business-without-capital** angles confirmed performing across channels in the case study data
+
+### What Changed
+- **Completion rate is now the primary RPM signal** — not view count. A Short with 100K views + 80% completion out-earns 500K views + 20% completion. Old view-count-driven niches (memes, repost compilations) are net losers under the new model.
+- **Shorts Plus (3-min max) is a real revenue lever** — long-format Shorts with high retention generate 2–3x the ad value of short clips. The "shorter = better" assumption is outdated.
+- **Daily posting is now algorithmically rewarded** — the 15–25% consistency bonus means volume cadence matters more than ever for RPM.
+- **Monetization is easier to reach but thresholds are doubling in Feb 2027** — get accounts monetized before the window closes.
+- **Passive income communities still actively discussing YouTube automation as viable** — faceless channels, KDP, Etsy digital products consistent earners; dropshipping repeatedly cited as net loss in 2025–2026 data.
 
 ## YouTube Shorts RPM Mechanics
 

@@ -11,6 +11,8 @@
 ## Lessons
 - [[niche-research-top-shorts-2026]] — YouTube Shorts niche RPM rankings, top 3 recommended niches, podcast-to-Shorts pipeline, retention signals
 - [[stick-figure-first-video-2026-09-26]] — first video on the drawn path: mixed-format concat loss, mp3 encoder delay, `mid`-as-ink black voids, staging against set furniture, provider-role fit
+- [[local-tts-voicebox-kokoro-2026-09-29]] — Voicebox+Kokoro local TTS: pedalboard SIGILL fix, API shape, $0 voiceovers
+- [[sparta-helots-reel-2026-09-29]] — first $0 video: local TTS + drawn renderer, targeted-verification research beat
 
 ## Sources
 - [[second-wind-defect-chain-2026-09-25]] — eight root causes from the b5c51bf9 postmortem and reruns 14-18

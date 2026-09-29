@@ -26,3 +26,5 @@
 - **Face finding**: no account in this niche draws recognisable faces — identity is costume plus name labels. A portrait head built from the subject's photographs is therefore an upgrade on the format, not an imitation of it.
 - Reference artefacts under `/mnt/bulk/studio-media/artifacts/ref_ddn4/`.
 
+
+- 2026-09-29 — Produced the Sparta helots reel end to end for $0: local Voicebox+Kokoro TTS (pedalboard AVX-512 SIGILL fixed with a pure-Python stub), drawn renderer, 162s cut accepted. Research subagents stalled and were stopped; targeted primary-source verification ([[sparta-helots-reel-2026-09-29]]) produced the fact file. Lessons: [[local-tts-voicebox-kokoro-2026-09-29]].
