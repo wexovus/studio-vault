@@ -9,6 +9,7 @@
 - [[lesson-format]] — Shape of a lesson the studio can reuse.
 
 ## Lessons
+- [[gemini-review-billing-blocker]] — verify authorized image review before purchases; HTTP402 prepaid-credit failure can be misreported as rate limiting
 - [[niche-research-top-shorts-2026]] — YouTube Shorts niche RPM rankings, top 3 recommended niches, podcast-to-Shorts pipeline, retention signals
 - [[stick-figure-first-video-2026-09-26]] — first video on the drawn path: mixed-format concat loss, mp3 encoder delay, `mid`-as-ink black voids, staging against set furniture, provider-role fit
 - [[local-tts-voicebox-kokoro-2026-09-29]] — Voicebox+Kokoro local TTS: pedalboard SIGILL fix, API shape, $0 voiceovers
